@@ -19,6 +19,9 @@ $(call inherit-product, device/sony/suzuran/full_suzuran.mk)
 # Inherit some common LineageOS stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Shipping API level
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l_mr1.mk)
+
 PRODUCT_NAME := lineage_suzuran
 
 # Use the latest approved GMS identifiers
